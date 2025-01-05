@@ -10,7 +10,6 @@ window.addEventListener('load', () => {
 const startDraw = () =>{
     isDrawing = true;
     ctx.beginPath()
-    ctx.lineWidth = 3
 }
 const startErase = () => {
     isDrawing = true;
@@ -42,6 +41,7 @@ tol.forEach( i => i.addEventListener('click', (e) => {
         if(i.classList.contains('pen')){
             canvas.addEventListener('mousedown', startDraw);
             ctx.strokeStyle = 'black'
+            ctx.lineWidth = 3
         }else if(i.classList.contains('eraser')){
             canvas.addEventListener('mousedown', startErase);
         }else{
@@ -75,4 +75,9 @@ clr.forEach(i => {
         prp.classList.toggle('disp')
 
     })
+})
+
+let psz = document.querySelector('.psiz')
+psz.addEventListener('change', e => {
+    ctx.lineWidth = psz.value
 })
