@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="abv disp" >
+        <div class="props">
+            <input type="range" class="psiz inp ">
+            <div class="clor">
+                <input type="color" class="clrbx inp">
+                <div class="clr clr1" data-colour="yellow"></div>
+                <div class="clr clr3" data-colour="blue"></div>
+                <div class="clr clr4" data-colour="red"></div>
+                <div class="clr clr2" data-colour="black"></div>
+            </div>
+        </div>
+    </div>
+    <div class="interactive-board">
+        <h1>Interactive Board</h1>
+        <div class="tools">
+            <div class="t">
+                <p>Pen</p>
+                <div class="pen tl">
+                    <i class="fa-solid fa-pen fa-xl pen"></i>
+                </div>
+                
+            </div>
+            <div class="t">
+                <p>Eraser</p>
+                <div class="eraser tl">
+                    <i class="fa-solid fa-eraser fa-xl eraser"></i>
+                </div>
+            </div>
+            <div class="t">
+                <p>Clear Board</p>
+                <div class="clear tl">
+                    <i class="fa-solid fa-trash fa-xl clear"></i>
+                </div>
+            </div>
+        </div>
+        <div class="working-area">
+            <canvas></canvas>
+        </div>
+        <div class="users">
+            <div class="usr">
+                <img src="https://img.freepik.com/free-vector/hand-drawn-cute-pet-discord-profile-picture_742173-13085.jpg"
+                    alt="">
+                <p>Shinchan</p>
+            </div>
+            <div class="usr">
+                <img src="https://content.wepik.com/statics/243773724/preview-page1.jpg" alt="">
+                <p>Nanny</p>
+            </div>
+            <div class="usr">
+                <img src="https://content.wepik.com/statics/243773718/preview-page0.jpg" alt="">
+                <p>Kazama</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
